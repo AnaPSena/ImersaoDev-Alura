@@ -1,0 +1,46 @@
+2: aula
+
+var numeroSecreto = parseInt(Math.random() * 101);
+
+while(chute != numeroSecreto) {
+  var chute = prompt('Digite um numero de 0 a 100')
+
+  //se o chute for igual ao número secreto
+  if (chute == numeroSecreto) {
+    alert('Acertou!')
+  } else if (chute > numeroSecreto) {
+    alert('Você errou... tente algum número menor!')
+  } else if (chute < numeroSecreto) {
+    alert ('Você errou... tente algum número maior!')
+  }
+}
+
+3: aula
+
+var listaFilmes = [
+  "https://cdcc.usp.br/wp-content/uploads/sites/512/2020/11/Maos-Talentosas-capa-do-filme-2-400x557.jpg",
+  "https://i.pinimg.com/originals/29/db/0c/29db0c0a687e36fd8a03f01d367fb14c.jpg",
+  "https://www.ucicinemas.com.br/Content/Upload/Filmes/Posters/10525/filme_10525.jpg",
+  "https://br.web.img2.acsta.net/medias/nmedia/18/92/34/89/20194741.jpg",
+  "https://cinema10.com.br/upload/featuredImage.php?url=https%3A%2F%2Fcinema10.com.br%2Fupload%2Ffilmes%2Ffilmes_11337_posterestrelasalemdotempo1.jpg",
+];
+
+var i = 0;
+
+while (i < listaFilmes.length) {
+  document.write("<img src=" + listaFilmes[i] + ">");
+  i++;
+}
+
+4 aula:
+
+function adicionarFilme() {
+  var filmeFavorito = 
+document.getElementById('filme').value
+  var elementoListaFilmes = document.getElementById('listaFilmes')
+  elementoListaFilmes.innerHTML = elementoListaFilmes.innerHTML + '<img src=' + filmeFavorito + '>'
+  document.getElementById('filme').value = ''
+}
+
+
+
